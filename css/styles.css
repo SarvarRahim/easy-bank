@@ -135,7 +135,7 @@ img {
 
 .site-nav__link:hover {
   border-bottom: 4px solid #2FC697FF;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   color: var(--color-title);
 }
 
@@ -161,11 +161,11 @@ img {
 .site-hero {
   position: relative;
   background-repeat: no-repeat;
-  background-position:calc(50% + 485px) -140px;
-  background-size: contain;
+  background-position: calc(50% + 625px) -222px;
+  background-size: cover;
   background-image: url("../img/hero-bg-desktop.svg");
-  padding-top: 270px;
-  padding-bottom: 270px;
+  padding-top: 170px;
+  padding-bottom: 170px;
 }
 
 .site-hero__content {
@@ -196,5 +196,5 @@ img {
 .site-hero__image {
   position: absolute;
   top: -60px;
-  right: -134px;
+  right: -100px;
 }
