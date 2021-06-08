@@ -160,12 +160,24 @@ img {
 
 .site-hero {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: calc(50% + 625px) -222px;
-  background-size: cover;
   background-image: url("../img/hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 582px) -190px;
   padding-top: 170px;
   padding-bottom: 170px;
+}
+
+.site-hero::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 728px;
+  height: 899px;
+  background-image: url("../img/hero-phones-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 112px) -30px;
+  background-size: contain;
 }
 
 .site-hero__content {
@@ -193,11 +205,6 @@ img {
   width: 447px;
 }
 
-.site-hero__image {
-  position: absolute;
-  top: -48px;
-  right: -100px;
-}
 
 /* FEATURES SCTION PAGE  */
 
@@ -241,11 +248,11 @@ img {
 }
 
 .features__item {
-  width: 225px;
+  max-width: 255px;
   margin-left: 30px;
 }
 
-.features__item:nth-child(1) {
+.features__item:first-child {
   margin: 0;
 }
 
