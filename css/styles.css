@@ -59,7 +59,7 @@ body {
   background-color: #fff;
   font-size: 16px;
   line-height: 1.5;
-  background-color: var(--bgc-site);
+  background-color: #FAFAFAFF;
 }
 
 img {
@@ -195,6 +195,258 @@ img {
 
 .site-hero__image {
   position: absolute;
-  top: -60px;
+  top: -48px;
   right: -100px;
 }
+
+/* FEATURES SCTION PAGE  */
+
+.features {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  background-color: #F4F5F7;
+}
+
+.features__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: var(--color-title);
+  margin-bottom: 16px;
+}
+
+.features__text {
+  width: 635px;
+  margin: 0;
+  font-family: var(--font-stack);
+  margin-bottom: 72px;
+}
+
+.features__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__list__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  margin-top: 40px;
+}
+
+.features__item {
+  width: 225px;
+  margin-left: 30px;
+}
+
+.features__item:nth-child(1) {
+  margin: 0;
+}
+
+.features__item::before {
+  display: block;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.features__ite__bg--first::before {
+  background-image: url("../img/online-banking-bg.svg");
+}
+
+.features__ite__bg--second::before {
+  background-image: url("../img/Simple-budgeting-bg.svg");
+}
+
+.features__ite__bg--thirt::before {
+  background-image: url("../img/fast-onboarding-bg.svg");
+}
+
+.features__ite__bg--four::before {
+  background-image: url("../img/open-api-bg.svg");
+}
+
+.features__list__info {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: var(--color-text);
+  margin-top: 26px;
+}
+
+/* ATICLE PAGE  */
+
+.articles {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.articles__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+}
+
+.articles__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.articles__item {
+  width: 255px;
+  margin-left: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.articles__item:nth-child(1) {
+  margin: 0;
+}
+
+.articles__list__image {
+  display: block;
+}
+
+.articles__item__wrapper {
+  padding: 24px;
+}
+
+.articles__link {
+  text-decoration: none;
+}
+
+.articles__list__name {
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.15625px;
+  color: var(--color-text);
+}
+
+.articles__list__head {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.285714px;
+  color: var(--color-title);
+  transition: color 0.3s ease;
+}
+
+.articles__list__head:hover {
+  color: #30C88F;
+}
+
+.articles__list__info {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.203125px;
+  color: var(--color-text);
+}
+
+/* FOOTER PAGE  */
+
+.footer-site {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--color-title);
+}
+
+.footer-site__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-site__left {
+  margin-right: 131px;
+}
+
+.footer-site__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 56px;
+}
+
+.footer-site__item {
+  margin-left: 13px;
+}
+
+.footer-site__item:nth-child(1) {
+  margin: 0;
+}
+
+.footer-site__social {
+  transition: fill 0.2s ease;
+}
+
+.footer-site__social:hover {
+  fill: #30C88F;
+}
+
+.footer-site__center {
+  display: flex;
+}
+
+.footer-site__center__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 100px;
+}
+
+
+.footer-site__center__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.234375px;
+  color: var(--color-text-white);
+  white-space: nowrap;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+
+.footer-site__center__link:hover {
+  color: #30C88F;
+}
+
+.footer-site__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-site__right {
+  padding-left: 235px;
+}
+
+.site-footer__rigth__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: -0.234375px;
+  color: var(--color-text-white);
+  white-space: nowrap;
+  margin-top: 24px;
+  opacity: 0.5;
+}
+
